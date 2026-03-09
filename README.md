@@ -3,7 +3,7 @@
 Version: 1.0.0  
 Language: JavaScript  
 
-The Astrology module is designed to help you retrieve astrological data based on a given date. As for now, the data it provides are the zodiac sign, the element, and the modality as well as validating dates.
+The Astrology module is designed to help you retrieve astrological data based on a given date. As for now, the data it provides are the zodiac sign, the element, and the modality for the given date, as well as validating the dates.
 
 The module is ideal for developers wanting to have easy access to astrological data or for those developing an astrology-based application.
 
@@ -14,7 +14,7 @@ The module is ideal for developers wanting to have easy access to astrological d
 - Modality retrieval
 
 **The module allows you to:**  
-Validate dates to ensure they are valid and in the correct YYYY-MM-DD format.
+Validate dates to ensure they are valid and in the correct format: YYYY-MM-DD.
 Retrieve the zodiac sign associated with a validated date.
 Get additional astrological information, such as the element (Fire, Earth, Air, Water) and modality (Cardinal, Fixed, Mutable) for a given zodiac sign.
 
@@ -64,6 +64,8 @@ Modality: Cardinal
 ``````
 
 # Dependencies
+
+Applikationen använder Astrology-modulen från laboration 2 som ett externt bibliotek. Appen är beroende av modulen för alla astrologiska beräkningar. Modulen är fristående och oberoende av appen.
 
 The Astrology module does not rely on external dependencies, aside from the development tool ESLint for code quality.
 
@@ -124,13 +126,13 @@ Any bugs found during testing are documented in [bugrapport.md](./bugrapport.md)
 
 # License
 
-Copyright (c) [2024] [Liv Åberg]  
+Copyright (c) [2026] [Liv Åberg]  
 This project is licensed under the terms of the MIT license. For full license information, see LICENSE file.
 
 
  # Updates
 
- This is the first version of the module (1.0.0). Currently, there are no planned updates. Any potential future changes will follow semantic versioning (major.minor.patch).
+ This is the first version of the app (1.0.0). Currently, there are no planned updates. Any potential future changes will follow semantic versioning (major.minor.patch).
 
 
 # Syntax
