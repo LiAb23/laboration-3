@@ -15,7 +15,7 @@ Appen ska vara lättanvänd och fungera i webbläsaren.
 3. Appen visar motsvarande stjärntecken (Zodiac Sign) för ett giltigt datum.
 4. Appen visar element (Fire, Earth, Air, Water) för stjärntecknet.
 5. Appen visar modalitet (Cardinal, Fixed, Mutable) för stjärntecknet.
-6. Appen uppdaterar visningen direkt när användaren trycker på "Visa"-knappen.
+6. Appen uppdaterar visningen direkt när användaren trycker på "Show"-knappen.
 
 ## Icke-funktionella krav
 - Appen ska vara enkel, tydlig och minimalistisk.
@@ -23,7 +23,7 @@ Appen ska vara lättanvänd och fungera i webbläsaren.
 - Appen ska använda modulen från den modifierade L2.
 - Appen ska vara lätt att underhålla och att läsa koden i enlighet med principerna beskrivna i boken Clean Code.
 
-# Teknik
+## Teknik
 Applikationen implementeras som en enkel klientbaserad webbapplikation och använder följande tekniker:
 - HTML - för struktur och användargränssnitt
 - CSS - för layout och styling
