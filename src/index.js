@@ -6,7 +6,7 @@
  */
 
 import express from 'express'
-import { DateManager } from './lib/dateManager.js'
+import { DateToZodiac } from './lib/DateToZodiac.js'
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -20,14 +20,14 @@ app.get('/api/sign', (req, res) => {
   }
 
   try {
-    const dateManager = new DateManager(date)
+    const dateManager = new DateToZodiac(date)
     const zodiacSignObject = dateManager.getZodiacSignObject()
     const zodiacSign = zodiacSignObject.getZodiacSign()
     res.json({ sign: zodiacSign })
   } catch (error) {
     res.status(400).json({ error: error.message })
   }
-    })
+})
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`)
