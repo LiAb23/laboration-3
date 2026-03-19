@@ -1,4 +1,52 @@
-# Allmänna reflektioner
+# L3 – Astrology App
+
+Reflektioner utifrån Clean Code (kap. 2–11) för L3 - appen.  
+
+
+## Allmänna reflektioner
+
+en kort (4-6 meningar) reflektion för varje kapitel om hur just det kapitlet har påverkat eller inte påverkat din kod. Använd bokens termer. Ge exempel med läsbara screenshots från er kod till varje reflektion. 
+
+
+### Kapitel 2 - Namngivning
+
+
+### Kapitel 3 - Funktioner
+
+
+### Kapitel 4 -
+
+
+### Kapitel 5 -
+
+
+### Kapitel 6 -
+
+
+### Kapitel 7 -
+
+
+### Kapitel 8 -
+
+
+### Kapitel 9 -
+
+
+### Kapitel 10 -
+
+
+### Kapitel 11 -
+
+
+
+
+
+# L2 – Astrology Module
+
+Reflektioner utifrån Clean Code (kap. 2–3) för L2 - modulen.  
+
+
+## Allmänna reflektioner
 
 I arbetet med den här uppgiften och med genomgång av de två kapitlen har jag fått med mig bra riktlinjer att tänka på när jag skriver kod. Jag har kunnat jämföra min kod med det jag läser, och identifiera såväl områden och fall där jag väl följer rekommendationerna, något att ta fasta på, samt områden där jag brister och behöver tänka på att försöka applicera mer framöver. Att sträva efter Single Responsibility Principle (SRP) känner jag t ex att jag kan utvecklas mer kring.<br>  
 
@@ -8,7 +56,7 @@ Jag kan verkligen se vikten av att få koden och programmen mer abstrakta och ha
 
 Att tänka på att hålla sig konsekvent, tydlig och väl avgränsad är några av medskicken jag tar med mig. Jag ser fram emot att nu kunna börja utvecklas och hitta mina sätt att skriva bra och ren kod.<br>  
 
-# Namngivning (kapitel 2)
+### Kapitel 2 - Namngivning
 
 |   Namn och förklaring        |  Reflektion och regler från Clean Code                   |
 |------------------------------|----------------------------------------------------------|
@@ -23,7 +71,7 @@ Jag tycker att många av "reglerna" i boken handlar om tydlighet, att man ska va
 Det har varit bra att lära sig lite mer om vad som är bra att tänka på, t ex att ha sökbara namn. Det är ett bra tips som jag kommer att ha nytta av framåt. Även att få kännedom om hungarian notation då det kanske är något man kommer att stöta på framöver. Jag har från kapitlet fått med mig bra perspektiv som jag kommer att ha med mig i arbetet framåt. Det har också varit roligt att kunna lyfta blicken lite, från att tidigare panikförsöka bara få saker att fungera till att nu börja tänka och diskutera lite mer kring hur man bör göra saker.
 
 
-# Funktioner (kapitel 3)
+### Kapitel 3 - Funktioner
 
 |  Metodnamn och länk eller kod |  Antal rader | Reflektion                  |
 |-------------------------------|--------------|-----------------------------|

@@ -1,4 +1,9 @@
-# Testrapport Astrology module
+# L2 – Astrology Module
+
+Denna rapport hör till den tidigare uppgiften; L2 - modulen.  
+
+
+## Testrapport 
 
 För testning av modulen har varje metod testats (privata metoder indirekt). Testningen har utförts med hjälp av manuella testfall, se filen testApp.js. Olika testvärden har angetts, både giltiga och ogiltiga värden. En viss bredd i spridningen av testerna har använts för att få de så täckande som möjligt genom att testa på lite olika sätt, även om det inte täcker alla eventualiter. Samtliga testfall utom ett har gått igenom och visar på ett gott resultat. Modulen fungerar bra, men det finns en brist gällande den speciella månaden februari som inte får rätt antal dagar och därmed kan ge ett felaktigt stjärntecken, vilket är viktigt att ta hänsyn till i användningen av modulen. Inför uppdateringar i kommande versioner bör detta åtgärdas. Nedan följer en specifikation av varje testfall:
 
