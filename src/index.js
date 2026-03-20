@@ -13,6 +13,8 @@ const port = process.env.PORT || 3000
 
 app.use('/', express.static('public'))
 
+app.use('/src', express.static('src'))
+
 app.get('/api/sign', (req, res) => {
   const date = req.query.date
   if (!date) {
