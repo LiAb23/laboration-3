@@ -70,7 +70,7 @@ h1 {
 
 .row {
   display: none;
-  width: 100%;
+  width: 90%;
   max-width: 1100px;
   gap: 2rem;
   margin-bottom: 1rem;
@@ -104,7 +104,7 @@ h1 {
   left: 0;
   width: 100%;
   padding: 0 10px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 #signs span {

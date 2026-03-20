@@ -42,7 +42,7 @@ export class DateToZodiac {
    * @throws {Error} If the format is incorrect
    */
   #checkDateFormat (date) {
-    const dateRegex = /^(19|20\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$/
+    const dateRegex = /^(19\d{2}|20[0-5]\d|2060)-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/
 
     if (!dateRegex.test(date)) {
       throw new Error('The date must be in the following format: YYYY-MM-DD')
