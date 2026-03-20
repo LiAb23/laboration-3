@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const dom = {
     dateInput: document.getElementById('birthDate'),
     showButton: document.getElementById('showButton'),
+    row: document.querySelector('.row'),
     sign: document.getElementById('sign'),
     element: document.getElementById('element'),
     modality: document.getElementById('modality')
@@ -14,7 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
    * Renders a loading state while waiting for the API response.
    */
   function renderLoading () {
-    dom.sign.textContent = 'Loading...'
+    dom.row.style.display = 'none'
+    dom.sign.querySelector('.label').textContent = 'Loading...'
+    dom.sign.querySelector('.result').textContent = ''
     dom.element.textContent = ''
     dom.modality.textContent = ''
   }
@@ -27,9 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
    * @param {string} modality The modality associated with the zodiac sign
    */
   function renderResults (zodiacSign, element, modality) {
-    dom.sign.textContent = `Your zodiac sign is: ${zodiacSign}`
-    dom.element.textContent = `The element of ${zodiacSign} is: ${element}`
-    dom.modality.textContent = `The modality of ${zodiacSign} is: ${modality}`
+    dom.row.style.display = 'flex'
+    dom.sign.querySelector('.label').textContent = 'Your zodiac sign is:'
+    dom.sign.querySelector('.result').textContent = zodiacSign
+    dom.element.textContent = `The element of ${zodiacSign} is:\n\n ${element}`
+    dom.modality.textContent = `The modality of ${zodiacSign} is:\n\n ${modality}`
   }
 
   /**

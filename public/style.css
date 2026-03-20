@@ -38,6 +38,10 @@ h1 {
 }
 
 #resultContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 1200px;
   min-height: 500px;
   margin: 20px auto;
@@ -45,6 +49,46 @@ h1 {
   background-color: rgb(247, 245, 245);
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.8rem;
+}
+
+#sign {
+  font-weight: 900;
+  width: 100%;
+  margin-top: 1rem;
+  white-space: pre-line;
+  text-align: center;
+}
+
+#sign .result {
+  font-size: 5rem;
+}
+
+.row {
+  display: none;
+  width: 100%;
+  max-width: 1100px;
+  gap: 4rem;
+  margin-bottom: 1rem;
+}
+
+.row-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.8);
+  min-height: 180px;
+}
+
+#element,
+#modality {
+  font-weight: 600;
+  text-align: center;
+  opacity: 0.8;
+  white-space: pre-line;
 }
 
 #signs {
