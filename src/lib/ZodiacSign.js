@@ -4,7 +4,7 @@
  */
 
 /**
- * The class takes the validated date from DateToZodiac, and sets its corresponding zodiac sign which can be used further to generate various astrological data such as element and modality.
+ * The class takes the validated date from ValidatedDate, and sets its corresponding zodiac sign which can be used further to generate various astrological data such as element and modality.
  *
  * @author Liv <lh224hh@student.lnu.se>
  * @version 1.0.0
@@ -13,7 +13,7 @@ export class ZodiacSign {
   #validatedDate
 
   /**
-   * Initializes the ZodiacSign object with the validated date from the DateToZodiac class.
+   * Initializes the ZodiacSign object with the validated date from the ValidatedDate class.
    *
    * @param {string} validatedDate The validated date
    */
@@ -64,7 +64,7 @@ export class ZodiacSign {
    * @throws {Error} If no matching sign is found
    */
   #handleNoMatchingSign (monthDay) {
-    throw new Error(`Found no matching sign for ${monthDay}`)
+    throw new Error(`Failed to determine zodiac sign for date ${monthDay}`)
   }
 
   /**

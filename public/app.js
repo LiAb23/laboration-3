@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
       renderResults(zodiacSign, element, modality)
     } catch (error) {
       console.error('An error occurred while fetching the zodiac sign:', error)
-      alert('An error occurred while fetching your zodiac sign.')
+      alert(`Failed to fetch zodiac sign: ${error.message}`)
     }
   })
 })

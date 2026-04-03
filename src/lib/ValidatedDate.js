@@ -11,7 +11,7 @@ import { ZodiacSign } from './ZodiacSign.js'
  * @author Liv <lh224hh@student.lnu.se>
  * @version 1.0.0
  */
-export class DateToZodiac {
+export class ValidatedDate {
   #inputDate
   #validatedDate
 
@@ -45,7 +45,7 @@ export class DateToZodiac {
     const dateRegex = /^(19\d{2}|20[0-5]\d|2060)-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/
 
     if (!dateRegex.test(date)) {
-      throw new Error('The date must be in the following format: YYYY-MM-DD')
+      throw new Error(`Failed to validate date ${date}: expected format: YYYY-MM-DD`)
     }
   }
 
@@ -61,7 +61,7 @@ export class DateToZodiac {
     const validatedDate = parsedDate.toISOString().split('T')[0]
 
     if (isNaN(parsedDate.getTime()) || validatedDate !== date) {
-      throw new Error('The date you submitted is not a valid date.')
+      throw new Error(`Failed to validate date ${date}: date is not valid`)
     }
 
     return validatedDate

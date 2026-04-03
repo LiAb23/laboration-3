@@ -6,7 +6,7 @@
  */
 
 import express from 'express'
-import { DateToZodiac } from './lib/DateToZodiac.js'
+import { ValidatedDate } from './lib/ValidatedDate.js'
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -18,16 +18,17 @@ app.use('/src', express.static('src'))
 app.get('/api/sign', (req, res) => {
   const date = req.query.date
   if (!date) {
-    return res.status(400).json({ error: 'Missing date query parameter' })
+    return res.status(400).json({ error: 'Failed to fetch zodiac sign: missing date query parameter' })
   }
 
   try {
-    const dateManager = new DateToZodiac(date)
+    const dateManager = new ValidatedDate(date)
     const zodiacSignObject = dateManager.getZodiacSignObject()
     const zodiacSign = zodiacSignObject.getZodiacSign()
     res.json({ sign: zodiacSign })
   } catch (error) {
-    res.status(400).json({ error: error.message })
+    console.error('Failed to determine zodiac sign:', error)
+    res.status(400).json({ error: `Failed to fetch zodiac sign: ${error.message}` })
   }
 })
 

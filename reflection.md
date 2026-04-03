@@ -3,9 +3,11 @@
 Reflektioner utifrån Clean Code (kap. 2–11) för L3 - appen.  
 
 
-## Allmänna reflektioner
-
 en kort (4-6 meningar) reflektion för varje kapitel om hur just det kapitlet har påverkat eller inte påverkat din kod. Använd bokens termer. Ge exempel med läsbara screenshots från er kod till varje reflektion. 
+
+Fokusera på tydlighet, variation, ärlighet och vad som är intressant. Exempelvis om du har icke självklara överväganden med olika kvalitetsregler som står i konflikt med varandra så är dessa extra intressanta.
+Jag kommer även titta på och bedöma er kod. Den skall därför i största mån vara skriven för att kunna fortsätta utvecklas av andra programmerare. 
+
 
 
 ### Kapitel 2 - Namngivning

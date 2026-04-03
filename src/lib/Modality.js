@@ -67,7 +67,7 @@ export class Modality {
    * @throws {Error} If no matching modality is found
    */
   #handleNoMatchingModality () {
-    throw new Error(`Found no matching modality for  ${this.#zodiacSign}`)
+    throw new Error(`Failed to determine modality for zodiac sign ${this.#zodiacSign}`)
   }
 
   /**

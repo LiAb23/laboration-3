@@ -70,7 +70,7 @@ export class Element {
    * @throws {Error} If no matching element is found
    */
   #handleNoMatchingElement () {
-    throw new Error(`Found no matching element for ${this.#zodiacSign}`)
+    throw new Error(`Failed to determine element for zodiac sign ${this.#zodiacSign}`)
   }
 
   /**
