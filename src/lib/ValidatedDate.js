@@ -45,7 +45,7 @@ export class ValidatedDate {
     const dateRegex = /^(19\d{2}|20[0-5]\d|2060)-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/
 
     if (!dateRegex.test(date)) {
-      throw new Error(`Failed to validate date ${date}: expected format: YYYY-MM-DD`)
+      throw new Error(`Failed to validate date ${date}. Expected format: YYYY-MM-DD`)
     }
   }
 

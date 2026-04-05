@@ -37,8 +37,8 @@ Applikationen implementeras som en enkel klientbaserad webbapplikation och anvä
 |------|----------|--------|----------------|
 |  1   | TC1: Datum har ej angetts | Tom input | Meddelande visas: "Please select a date" |
 |  1   | TC2: Korrekt datumformat | 2023-03-30 | Inget felmeddelande kopplat till format visas, datumet bearbetas vidare och ger resultat om giltigt |
-|  1   | TC3: Ogiltigt datumformat | 30-03-2023 | Felmeddelande: "The date must be in the following format: YYYY-MM-DD" |
-|  2   | TC4: Ogiltigt datum | 2023-02-30 | Felmeddelande: "The date you submitted is not a valid date." |
+|  1   | TC3: Ogiltigt datumformat | 30-03-2023 | Felmeddelande: "Failed to validate date ${date}. Expected format: YYYY-MM-DD"|
+|  2   | TC4: Ogiltigt datum | 2023-02-30 | Felmeddelande: "Failed to validate date ${date}: date is not valid" |
 |  3   | TC5: Visa stjärntecken | 2023-03-30 | ♈Aries |
 |  3   | TC6: Visa stjärntecken vid gränsdatum | 2023-05-20 | ♉Taurus |
 |  4   | TC7: Visa element | 2023-03-30 | 🔥 Fire |
