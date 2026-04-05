@@ -22,8 +22,8 @@ app.get('/api/sign', (req, res) => {
   }
 
   try {
-    const dateManager = new ValidatedDate(date)
-    const zodiacSignObject = dateManager.getZodiacSignObject()
+    const validatedDate = new ValidatedDate(date)
+    const zodiacSignObject = validatedDate.getZodiacSignObject()
     const zodiacSign = zodiacSignObject.getZodiacSign()
     res.json({ sign: zodiacSign })
   } catch (error) {
