@@ -1,158 +1,64 @@
-# Astrology App
+# L3 - Astrology App
 
 Version: 1.0.0  
 Language: JavaScript  
 
-The Astrology module is designed to help you retrieve astrological data based on a given date. As for now, the data it provides are the zodiac sign, the element, and the modality for the given date, as well as validating the dates.
+The Astrology App is a simple web application designed to help users quickly retrieve astrological data based on a given birth date. As for now, the data it provides are the zodiac sign, the element, and the modality for the given date, as well as validating the dates.
 
-The module is ideal for developers wanting to have easy access to astrological data or for those developing an astrology-based application.
+The app is ideal for users wanting to have easy access to basic astrological information. The app uses the Astrology module (L2) for all its calculations.
 
-**Features include:**
-- Date validation
-- Zodiac sign retrieval
-- Element retrieval
-- Modality retrieval
 
-**The module allows you to:**  
+**The application allows you to:**  
 Validate dates to ensure they are valid and in the correct format: YYYY-MM-DD.
 Retrieve the zodiac sign associated with a validated date.
 Get additional astrological information, such as the element (Fire, Earth, Air, Water) and modality (Cardinal, Fixed, Mutable) for a given zodiac sign.
 
 
-# Installation 
+# Using the application
 
-To use the module, follow these steps:
+The application is available on:
+[Open the app](https://astrology-app-9ppr.onrender.com/)
 
-**Clone the repository from GitHub:**  
-git clone https://github.com/LiAb23/astrology-module.git
-
-**Move the module into your project:**  
-move the lib folder into the src directory of your project
-
-**Install dependencies using:**  
-npm install
-
-**Import the module into your project:**  
-import { DateManager } from './src/lib/DateManager.js'
+To use it:
+1. Select the birth date
+2. Click the "Show" button
+3. The astrological information will be displayed instantly
 
 
-# Example use
+# Technologies:
+- HTML
+- CSS
+- JavaScript
+- Node.js/Express
+- Nodemon
+- ESLint
+- Prettier
+- Astrology module (L2)
 
-This is an example on how to use the Astrology module in your project:
-
-```
-import { DateManager } from './src/lib/DateManager.js'
-
-try {  
-  const dateManager = new DateManager('2023-03-30')  
-  const zodiacSign = dateManager.getZodiacSignObject().getZodiacSign()  
-  const element = new Element(zodiacSign).getElement()  
-  const modality = new Modality(zodiacSign).getModality()  
-  
-  console.log(`Zodiac sign: ${zodiacSign}`)  
-  console.log(`Element: ${element}`)  
-  console.log(`Modality: ${modality}`)  
-} catch (error) {  
-  console.log(error.message)  
-}  
-
-**Expected output:**  
-Zodiac sign: ♈Aries  
-Element: 🔥 Fire  
-Modality: Cardinal  
-
-``````
 
 # Dependencies
 
-Applikationen använder Astrology-modulen från laboration 2 som ett externt bibliotek. Appen är beroende av modulen för alla astrologiska beräkningar. Modulen är fristående och oberoende av appen.
+The Astrology Application relies on the Astrology module (L2) as an external library for all astrological calculations. The module is separate and independent from the application.
 
-The Astrology module does not rely on external dependencies, aside from the development tool ESLint for code quality.
-
-**Development dependency:**  
- "@lnu/eslint-config": "1.1.10"
-
-
-# Module overview
-
-Public methods include:
-
-**validateDate()**
-
-Arguments: none
-
-Returns: A string in ISO 8601 format (YYYY-MM-DD) if the provided date is valid.
-Throws an error if the date is not in the correct format or if it is invalid.
-
-**getZodiacSignObject()**
-
-Arguments: none
-
-Returns: An object of type ZodiacSign, which represents the zodiac sign for the validated date.
-
-**getZodiacSign()**
-
-Arguments: none
-
-Returns: A string representing the zodiac sign (e.g., ♉Taurus) corresponding to the validated date.
-
-**getModality()**
-
-Arguments: none
-
-Returns: A string representing the modality (Cardinal, Fixed, Mutable) associated with the given zodiac sign.
-
-**getElement()**
-
-Arguments: none
-
-Returns: A string representing the element (🔥 Fire, 🌍 Earth, 💨 Air, 💧 Water) corresponding to the given zodiac sign.
-
-![alt-text](diagram.png)
+The Astrology Application does not rely on other external dependencies, aside from the development tool ESLint for code quality and Prettier for formating purposes.  
 
 
 # Testing
 
-To test the Astrology module, manual testcases that cover each method can be found in testApp.js.
-
-To run the tests, use the following command:  
-npm test
+The application has been manually tested through the public user interface. Manual testcases covering each requirement are defined in [Requirements](./requirements.md). All tests have succeeded and produced the expected results.  
 
 
-# Bug reports
+# Known issues
 
-Any bugs found during testing are documented in [bugrapport.md](./bugrapport.md).
+There are currently no known issues. Any bugs found are reported as GitHub issues.  
+
+
+# Requirements
+
+The application requirements are listed in [Requirements](./requirements.md).
 
 
 # License
 
 Copyright (c) [2026] [Liv Åberg]  
 This project is licensed under the terms of the MIT license. For full license information, see LICENSE file.
-
-
- # Updates
-
- This is the first version of the app (1.0.0). Currently, there are no planned updates. Any potential future changes will follow semantic versioning (major.minor.patch).
-
-
-# Syntax
-
-This project follows the ESLint configuration provided by `@lnu/eslint-config`, which enforces consistent coding standards throughout the project. Ensure that ESLint is properly configured in your development environment to maintain code quality.
-
-
-# Requirements
-
-For more detailed information on the module's requirements, refer to the [Module Requirements](https://docs.google.com/document/d/1Fi_4C4SgL3FA1h_9j9_2Opu39FLBGUjsPr1sRMULy_U/edit?pli=1#heading=h.wdcld312ubab) document. 
-
-
-# Contributions
-
-We welcome contributions from the community! If you'd like to contribute, follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or fix.
-3. Make your changes and commit them with clear and descriptive messages.
-4. Submit a pull request for review.
-
-For questions or discussions, feel free to reach out via the project's GitHub Issues page.
-
